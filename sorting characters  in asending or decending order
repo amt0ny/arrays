@@ -1,0 +1,29 @@
+package com.company;
+
+import javax.swing.*;
+import java.util.Scanner;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        String a[] = {"Aman", "Gaurav", "Neeraj", "Sam", "Raju", "Emma", "Zombie"};
+        int size = a.length;
+        for (int i = 0; i<size;i++){// change here for decending or accending ">"
+            for (int j = 0;j<size;j++){// change here for decending or accending also ">"
+                if (a[i].compareTo(a[j])>0){
+                    String temp = a[i];
+                    a[i]  = a[j];
+                    a[j] = temp;
+                }
+
+            }
+        }
+        for (int  i = 0; i<size;i++){
+            System.out.println(a[i]);
+        }
+
+
+    }
+}
