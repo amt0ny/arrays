@@ -1,0 +1,38 @@
+package com.company;
+
+import javax.swing.*;
+import java.util.Scanner;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int ary[] = {4, 300, 2, 5, 16, 50, 1, 100};
+        int temp = 0;
+        int nth = 2;
+        for (int i = 0; i < ary.length ; i++) {
+            for (int j = i + 1; j < ary.length; j++) {
+                if (ary[i] < ary[j]) {
+                    temp = ary[i];
+                    ary[i] = ary[j];
+                    ary[j] = temp;
+                }
+            }
+            if (i == nth-1) {
+                System.out.println("your no. "  + nth+" largest number is : "+ary[i] );
+                break;
+            }
+
+            }
+
+        }
+    }
+
+
+
+
+
+
+
+
+
